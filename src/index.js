@@ -9,7 +9,7 @@ const morgan = require("morgan");
 const app = express();
 
 // Settings //
-app.set("port", 4000);
+app.set("port", process.env.PORT || 4000);
 
 // SQL //
 app.use(
